@@ -4,8 +4,12 @@
   "description": "Epic POS Web app",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nuxt"
   },
   "author": "Epic Software Solutions Ltd",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "materialize-css": "^0.98.0",
+    "nuxt": "^0.9.7"
+  }
 }
