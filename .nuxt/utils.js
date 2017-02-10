@@ -33,7 +33,7 @@ export function getContext (context) {
     route: (context.to ? context.to : context.route),
     error: context.error,
     base: '/',
-    env: {}
+    env: {"baseUrl":"http://localhost:3000"}
   }
   const next = context.next
   ctx.params = ctx.route.params || {}

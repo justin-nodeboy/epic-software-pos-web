@@ -12,5 +12,8 @@ module.exports = {
             { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto' },
             { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' }
         ]
+    },
+    env: {
+        baseUrl: process.env.BASE_URL || 'http://localhost:3000'
     }
 };
