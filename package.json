@@ -3,14 +3,8 @@
   "version": "1.0.0",
   "description": "Epic POS Web app",
   "main": "app.js",
-  "config": {
-    "nuxt": {
-      "host": "0.0.0.0",
-      "port": "3333"
-    }
-  },
   "scripts": {
-    "start": "nuxt"
+    "start": "HOST=0.0.0.0 PORT=3333 nuxt"
   },
   "author": "Epic Software Solutions Ltd",
   "license": "MIT",
