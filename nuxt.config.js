@@ -10,10 +10,17 @@ module.exports = {
         ],
         link: [
             { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto' },
-            { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' }
+            { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' },
+            { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Poppins' },
+            { rel: 'stylesheet', href: '/style.css' },
+            { rel: 'stylesheet', href: '/slick.css' },
+            { rel: 'stylesheet', href: '/slick-theme.css' }
         ]
     },
     env: {
         baseUrl: process.env.BASE_URL || 'http://localhost:3000'
+    },
+    build: {
+        vendor: ['jquery','slick-carousel']
     }
 };
