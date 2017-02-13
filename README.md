@@ -15,10 +15,11 @@ Once the project has been cloned, `cd` into the directory and run the following
 ```bash
 $ npm install
 ```
-Finally you will need a `.env` file to store your environment variables.
+Finally to run the app, just do
 ```bash
-$ touch .env
+$ npm start
 ```
+You will need to have the API running in order to use the web app, although it will fall over gracefully if there is no connection
 
 ## Features
 

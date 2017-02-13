@@ -2,10 +2,10 @@
     <div>
         <div class="container">
             <div class="row">
-                <div class="col s12 m12 l8">
+                <div class="col s12 m12 l7">
                     <a class="logo" href="/"><img src="/logo.png" /></a>
                 </div>
-                <div class="col s12 m12 l4">
+                <div class="col s12 m12 l5">
                     <ul class="account-nav">
                         <li v-if="isLoggedIn"><a href="/account">My Account</a></li>
                         <li v-if="!isLoggedIn"><a href="/login">Login/Register</a></li>
