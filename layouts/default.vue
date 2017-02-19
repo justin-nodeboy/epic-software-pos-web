@@ -1,31 +1,59 @@
 <template>
     <div>
-        <div class="container">
-            <div class="row">
-                <div class="col s12 m12 l7">
-                    <a class="logo" href="/"><img src="/logo.png" /></a>
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m12 l7">
+                        <a class="logo" href="/"><img src="/logo.png" /></a>
+                    </div>
+                    <div class="col s12 m12 l5">
+                        <ul class="account-nav">
+                            <li v-if="isLoggedIn"><a href="/account">My Account</a></li>
+                            <li v-if="!isLoggedIn"><a href="/login">Login/Register</a></li>
+                            <li><a href="/cart"><i class="material-icons">shopping_cart</i> Cart</a></li>
+                            <li><a href="/contact">Contact</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col s12 m12 l5">
-                    <ul class="account-nav">
-                        <li v-if="isLoggedIn"><a href="/account">My Account</a></li>
-                        <li v-if="!isLoggedIn"><a href="/login">Login/Register</a></li>
-                        <li><a href="/cart"><i class="material-icons">shopping_cart</i> Cart</a></li>
-                        <li><a href="/contact">Contact</a></li>
+            </div>
+            <nav>
+                <div class="container">
+                    <ul class="main-nav-ul">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/products">Products</a></li>
+                        <li><a href="/services">Services</a></li>
+                        <li><a href="/about">About Us</a></li>
                     </ul>
                 </div>
-            </div>
-        </div>
-        <nav>
+            </nav>
+        </header>
+        <main>
+            <nuxt></nuxt>
+        </main>
+        <footer class="page-footer">
             <div class="container">
-                <ul class="main-nav-ul">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/products">Products</a></li>
-                    <li><a href="/services">Services</a></li>
-                    <li><a href="/about">About Us</a></li>
-                </ul>
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">Footer Content</h5>
+                        <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                        <h5 class="white-text">Links</h5>
+                        <ul>
+                            <li><a class="grey-text text-lighten-3" href="/">Home</a></li>
+                            <li><a class="grey-text text-lighten-3" href="/products">Products</a></li>
+                            <li><a class="grey-text text-lighten-3" href="/services">Services</a></li>
+                            <li><a class="grey-text text-lighten-3" href="/about">About Us</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </nav>
-        <nuxt></nuxt>
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2017 Epic Software Solutions Ltd
+                </div>
+            </div>
+        </footer>
     </div>
 </template>
 
@@ -96,5 +124,10 @@
     .main-nav-ul li {
         text-transform: uppercase;
     }
+
+    footer {
+        background-color: #AB82FF !important;
+    }
+
 </style>
 
