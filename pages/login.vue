@@ -23,7 +23,7 @@
                             <p>We look forward to selling you all the things.</p>
                         </div>
                         <div class="card-action">
-                            <a href="#">Register now</a>
+                            <a href="/register">Register now</a>
                         </div>
                     </div>
                 </div>

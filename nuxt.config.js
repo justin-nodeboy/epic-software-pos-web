@@ -18,7 +18,7 @@ module.exports = {
         ]
     },
     env: {
-        baseUrl: process.env.BASE_URL || 'http://localhost:3000'
+        baseUrl: process.env.BASE_URL || 'https://localhost:3443'
     },
     build: {
         vendor: ['jquery','slick-carousel','materialize-css/dist/js/materialize.js']
